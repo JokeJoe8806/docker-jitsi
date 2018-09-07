@@ -28,4 +28,6 @@ EXPOSE 10000-20000/udp
 COPY JitsiMeet.sh /JitsiMeet.sh
 COPY jitsi-meet/ /jitsi-meet/
 COPY run.sh /run.sh
+RUN chmod+x /run.sh && \
+	chmod+x /JitsiMeet.sh
 CMD ["/bin/bash","/run.sh"]
