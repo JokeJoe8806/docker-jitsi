@@ -21,7 +21,6 @@ apt-get update && \
 apt-get -y install nginx && \
 apt-get -y -d install jitsi-meet
 
-
 EXPOSE 80 443 4443 5222 5280 5347
 EXPOSE 10000-20000/udp
 
