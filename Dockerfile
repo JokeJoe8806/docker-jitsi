@@ -21,10 +21,12 @@ apt-get -y -d install jitsi-meet
 RUN apt-get -y install coturn && \
 turnadmin -a -u risunton -r risunton.com -p 12345678
 
-EXPOSE 80 443 4443 5222 5280 5347 4567
+EXPOSE 80 443 4443 5222 5280 5347 20000
 EXPOSE 10000-20000/udp
 
 COPY JitsiMeet.sh /JitsiMeet.sh
 COPY jitsi-meet/ /jitsi-meet/
 COPY run.sh /run.sh
-CMD ["/bin/bash","/run.sh"]
+RUN chmod +x /run.sh
+CMD ["/run.sh"]
+
