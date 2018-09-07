@@ -21,7 +21,7 @@ apt-get -y -d install jitsi-meet
 RUN apt-get -y install coturn && \
 turnadmin -a -u risunton -r risunton.com -p 12345678
 
-EXPOSE 80 443 4443 5222 5280 5347 19302
+EXPOSE 80 443 4443 5222 5280 5347 4567
 EXPOSE 10000-20000/udp
 
 COPY JitsiMeet.sh /JitsiMeet.sh
