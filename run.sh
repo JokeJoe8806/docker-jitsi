@@ -10,4 +10,5 @@ service nginx start
 service prosody start
 service jicofo start
 service jitsi-videobridge start
+turnserver -n -a --listening-ip=$HOST --listening-port=19302 -r risunton.com
 tail -f /dev/null
