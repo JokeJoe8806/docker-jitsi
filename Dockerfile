@@ -18,8 +18,8 @@ apt-get update && \
 apt-get -y install nginx && \
 apt-get -y -d install jitsi-meet
 
-RUN apt-get -y install coturn && \
-turnadmin -a -u risunton -r risunton.com -p 12345678
+# RUN apt-get -y install coturn && \
+# turnadmin -a -u risunton -r risunton.com -p 12345678
 
 EXPOSE 80 443 4443 5222 5280 5347 20000
 EXPOSE 10000-20000/udp
