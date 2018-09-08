@@ -2,11 +2,11 @@ FROM tiredofit/debian:stretch
 LABEL maintainer="Joke Joe"
 ENV HOST 127.0.0.1
 
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
-echo "deb http://mirrors.163.com/debian/ stretch main contrib non-free" >/etc/apt/sources.list && \
-echo "deb http://mirrors.163.com/debian/ stretch-updates main contrib non-free" >>/etc/apt/sources.list && \
-echo "deb http://mirrors.163.com/debian-security/ stretch/updates main contrib non-free" >>/etc/apt/sources.list && \
-echo "deb http://mirrors.163/com/debian/ stretch-proposed-updates main contrib non-free" >>/etc/apt/sources.list
+# RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
+# echo "deb http://mirrors.163.com/debian/ stretch main contrib non-free" >/etc/apt/sources.list && \
+# echo "deb http://mirrors.163.com/debian/ stretch-updates main contrib non-free" >>/etc/apt/sources.list && \
+# echo "deb http://mirrors.163.com/debian-security/ stretch/updates main contrib non-free" >>/etc/apt/sources.list && \
+# echo "deb http://mirrors.163/com/debian/ stretch-proposed-updates main contrib non-free" >>/etc/apt/sources.list
 
 RUN apt-get update && \
 apt-get -y install apt-utils debconf-utils wget
