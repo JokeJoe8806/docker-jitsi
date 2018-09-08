@@ -304,7 +304,7 @@ var config = {
 
         // The STUN servers that will be used in the peer to peer connections
         stunServers: [
-	    	{ urls: 'stun:$HOST:20000' },
+	    	//{ urls: 'stun:$HOST:20000' },
             { urls: 'stun.freeswitch.org:3478' },
             { urls: 'stun:stun.xten.com:3478' },
             { urls: 'stun:stun.ekiga.net:3478' }
