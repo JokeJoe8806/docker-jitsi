@@ -21,6 +21,7 @@ apt-get -y -d install jitsi-meet
 EXPOSE 80 443 4443 5222 5280 5347
 EXPOSE 10000-20000/udp
 
+
 COPY JitsiMeet.sh /JitsiMeet.sh
 COPY jitsi-meet/ /jitsi-meet/
 COPY run.sh /run.sh
