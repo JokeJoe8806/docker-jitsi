@@ -304,10 +304,10 @@ var config = {
 
         // The STUN servers that will be used in the peer to peer connections
         stunServers: [
-	    	{ urls: 'stun:$HOST:4567' },
-            { urls: 'stun:stun.l.google.com:19302' },
-            { urls: 'stun:stun1.l.google.com:19302' },
-            { urls: 'stun:stun2.l.google.com:19302' }
+	    	{ urls: 'stun:$HOST:20000' },
+            { urls: 'stun.freeswitch.org:3478' },
+            { urls: 'stun:stun.xten.com:3478' },
+            { urls: 'stun:stun.ekiga.net:3478' }
         ],
 
         // Sets the ICE transport policy for the p2p connection. At the time
