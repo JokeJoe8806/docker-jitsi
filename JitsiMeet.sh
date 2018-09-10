@@ -401,4 +401,5 @@ var config = {
 /* eslint-enable no-unused-vars, no-var */
 
 EOF
+chmod -R go+r /jitsi-meet
 cp -rf /jitsi-meet/* /usr/share/jitsi-meet/
